@@ -1,7 +1,8 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
 <h1>Blog posts</h1>
-<p><?php echo $this->Html->link('New Post', array('action' => 'add')); ?></p>
+<p><?php echo $this->Html->link('Create a Post', array('action' => 'add')); ?></p>
+<p><?php echo $this->Html->link(__('Comment on a Post'), array('controller' => 'comments', 'action' => 'add')); ?></p>
 <table>
     <tr>
         <th>Id</th>
